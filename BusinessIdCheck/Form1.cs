@@ -16,5 +16,18 @@ namespace BusinessIdCheck
         {
             InitializeComponent();
         }
+
+        private void buttonCheck_Click(object sender, EventArgs e)
+        {
+            BusinessIdSpecification specification = new BusinessIdSpecification();
+            if (specification.IsSatisfiedBy(inputTextBox.Text))
+            {
+                MessageBox.Show("Y-tunnukset kirjoitusasu on oikein!", "Oikein", MessageBoxButtons.OK, MessageBoxIcon.None);
+            } 
+            else
+            {
+                MessageBox.Show(string.Join(Environment.NewLine, specification.ReasonsForDissatisfaction),"Virhe", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
     }
 }
