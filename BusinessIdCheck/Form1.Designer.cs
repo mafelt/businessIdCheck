@@ -75,7 +75,8 @@
             this.Controls.Add(this.label);
             this.Controls.Add(this.inputTextBox);
             this.Controls.Add(this.buttonCheck);
-            this.MaximumSize = new System.Drawing.Size(630, 130);
+            this.MaximumSize = new System.Drawing.Size(700, 140);
+            this.MinimumSize = new System.Drawing.Size(500, 130);
             this.Name = "Form1";
             this.Text = "Y-tunnus validointi";
             this.ResumeLayout(false);

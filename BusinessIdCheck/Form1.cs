@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace BusinessIdCheck
@@ -22,7 +15,7 @@ namespace BusinessIdCheck
             BusinessIdSpecification specification = new BusinessIdSpecification();
             if (specification.IsSatisfiedBy(inputTextBox.Text))
             {
-                MessageBox.Show("Y-tunnukset kirjoitusasu on oikein!", "Oikein", MessageBoxButtons.OK, MessageBoxIcon.None);
+                MessageBox.Show("Y-tunnuksen kirjoitusasu on oikein!", "Oikein", MessageBoxButtons.OK, MessageBoxIcon.None);
             } 
             else
             {
